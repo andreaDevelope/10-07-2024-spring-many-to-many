@@ -33,8 +33,8 @@ public class SpringManyToManyApplication implements CommandLineRunner {
 	}
 
 	public void testNoRelations(){
-		Employee e1 = new Employee("Rollo Pollo","rolloNumerOne", 1500);
-		Employee e2 = new Employee("Carlo Magno","meMagnoTutto", 2000);
+		Employee e1 = new Employee("Rollo Pollo","rolloNumerOne", 15000);
+		Employee e2 = new Employee("Carlo Magno","meMagnoTutto", 20000);
 
 		Task t1 = new Task("fe", "sviluppo del fe", 2);
 
@@ -56,7 +56,7 @@ public class SpringManyToManyApplication implements CommandLineRunner {
 
 	public void testRelationsManyToMany(){
 		// CREO LA MIA LISTA DI EMPLOYEE
-		Employee e3 = new Employee("Maldi Testa", "cioMalDiTesta", 3000);
+		Employee e3 = new Employee("Maldi Testa", "cioMalDiTesta", 30000);
 
 		es.save(e3);
 
